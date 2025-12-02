@@ -184,3 +184,77 @@ mark{
 aside.notes {
     display: none;
 }
+
+/* 音效控制器 */
+.audio-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(30, 60, 50, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 1000;
+    box-shadow: 0 8px 25px rgba(0, 80, 60, 0.2);
+    border: 1px solid rgba(87, 199, 133, 0.3);
+}
+
+.audio-btn {
+    background: #57c785;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.audio-btn:hover {
+    background: #3aa56d;
+    transform: scale(1.1);
+}
+
+#volume-slider {
+    width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    
+    /* 移除默认样式 - 现代标准写法 */
+    appearance: none;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    /* Safari仍需要-webkit前缀 */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #57c785;
+    cursor: pointer;
+}
+
+#volume-slider::-moz-range-thumb {
+    /* Firefox伪元素前缀不同 */
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #57c785;
+    border: none;
+    cursor: pointer;
+}
+
+#volume-display {
+    color: white;
+    font-size: 0.9em;
+    min-width: 35px;
+}

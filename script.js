@@ -89,3 +89,61 @@ document.addEventListener('keydown', function(e) {
             break;
     }
 });
+
+// ==== 生态音效系统 ====
+function initAudioSystem() {
+    const bgAudio = document.getElementById('bg-audio');
+    const pageSound = document.getElementById('page-turn-sound');
+    const expandSound = document.getElementById('expand-sound');
+    const volumeSlider = document.getElementById('volume-slider');
+    const volumeDisplay = document.getElementById('volume-display');
+    const toggleBtn = document.getElementById('toggle-bg-audio');
+    
+    // 音量控制
+    volumeSlider.addEventListener('input', function() {
+        const volume = this.value;
+        bgAudio.volume = volume;
+        pageSound.volume = volume;
+        expandSound.volume = volume;
+        volumeDisplay.textContent = `${Math.round(volume * 100)}%`;
+    });
+    
+    // 背景音乐切换
+    let bgMusicEnabled = false;
+    toggleBtn.addEventListener('click', function() {
+        bgMusicEnabled = !bgMusicEnabled;
+        if (bgMusicEnabled) {
+            bgAudio.play();
+            this.innerHTML = '<i class="fas fa-volume-up"></i>';
+            this.style.background = '#3aa56d';
+        } else {
+            bgAudio.pause();
+            this.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            this.style.background = '#57c785';
+        }
+    });
+    
+    // 页面切换音效
+    Reveal.on('slidechanged', function() {
+        pageSound.currentTime = 0;
+        pageSound.play().catch(e => console.log('音效播放被阻止（可能用户未交互）'));
+    });
+    
+    // 数据展开音效（为展开按钮添加）
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('expand-btn')) {
+            expandSound.currentTime = 0;
+            expandSound.play();
+        }
+    });
+    
+    // 初始音量设置
+    volumeSlider.dispatchEvent(new Event('input'));
+    
+    console.log('🎵 生态音效系统已加载');
+}
+
+// 在Reveal就绪后初始化音效
+Reveal.on('ready', function() {
+    initAudioSystem();
+});
