@@ -1,3 +1,64 @@
+/* 导航菜单 */
+.slides-menu {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px 15px;
+    box-shadow: 0 10px 40px rgba(0, 100, 80, 0.15);
+    z-index: 1000;
+    min-width: 160px;
+    border: 1px solid rgba(87, 199, 133, 0.3);
+}
+
+.menu-header {
+    font-weight: bold;
+    color: #1a5f7a;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.menu-item {
+    display: block;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-item:hover {
+    background: rgba(87, 199, 133, 0.1);
+    transform: translateX(5px);
+}
+
+.menu-item.active {
+    background: linear-gradient(135deg, #57c785, #2a9d8f);
+    color: white;
+    font-weight: bold;
+}
+
+/* 进度条 */
+.progress-bar {
+    height: 4px;
+    background: rgba(87, 199, 133, 0.2);
+    border-radius: 2px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #57c785, #1a5f7a);
+    width: 0%;
+    transition: width 0.5s ease;
+}
 /* 网格布局 */
 .content-grid{
     display:grid;
