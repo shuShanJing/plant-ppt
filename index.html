@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>植物对环境的影响及在环境治理中的应用</title>
+    <!-- 1.Reveal.js 核心样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <!-- 2.主题样式（选一个） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+    <!-- 3.你的自定义样式-->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- 导航菜单 -->
-     <nav class="slides-menu">
+    <!-- 导航菜单（放在slide外部） -->
+    <nav class="slides-menu">
         <div class="menu-header">🍃 导航</div>
         <ul>
             <li><a href="#/1" class="menu-item active">封面</a></li>
@@ -21,44 +26,94 @@
         <div class="progress-bar">
             <div class="progress-fill"></div>
         </div>
-     </nav>
-    <section>
-        <h2>一、植物对大气污染的净化作用及在大气治理中的应用</h2>
-        <h3>（一）植物对大气污染的净化作用</h3>
+    </nav>
 
-        <div class="content-grid">
-            <!-- 左列：核心数据卡片 -->
-            <div class="data-card">
-                <h4>🍃吸收CO₂放出O₂</h4>
-                <div class="highlight-data">
-                    <div class="data-item">
-                        <span class="number">20x</span>
-                        <p>光合吸收量是呼吸释放量的<strong>20倍</strong></p>
+    <!-- Reveal.js 容器 -->
+    <div class="reveal">
+        <!-- 幻灯片容器 -->
+        <div class="slides">
+            <!-- 第一张幻灯片（封面） -->
+            <section>
+                <h1>植物对环境的影响及在环境治理中的应用</h1>
+                <h3>交互式学术演示</h3>
+                <p>作者:shuShanJing | 技术伙伴:Deepseek</p>
+                <p class="fragment">⬇ 空格键开始旅程</p>
+            </section>
+
+            <!-- 第二张幻灯片（目录） -->
+            <section>
+                <h2>导航地图</h2>
+                <ul>
+                    <li><a href="#/3">一、植物对大气污染的净化作用及应用</a></li>
+                    <li><a href="#/4">二、植物对土壤环境的影响及应用</a></li>
+                    <li><a href="#/5">三、植物对水体环境的影响及应用</a></li>
+                    <li><a href="#/6">四、植物在环境监测中的应用</a></li>
+                </ul>
+            </section>
+
+            <!-- 第三张幻灯片：原来的大气净化内容 -->
+            <section>
+                <h2>一、植物对大气污染的净化作用及在大气治理中的应用</h2>
+                <h3>（一）植物对大气污染的净化作用</h3>
+
+                <div class="content-grid">
+                    <!-- 左列：核心数据卡片 -->
+                    <div class="data-card">
+                        <h4>🍃吸收CO₂放出O₂</h4>
+                        <div class="highlight-data">
+                            <div class="data-item">
+                                <span class="number">20x</span>
+                                <p>光合吸收量是呼吸释放量的<strong>20倍</strong></p>
+                            </div>
+                            <div class="data-item danger">
+                                <span class="number">0.051%</span>
+                                <p>CO₂浓度超过此值,人体即感不适</p>
+                            </div>
+                            <div class="data-item warning">
+                                <span class="number">0.20%~0.60%</span>
+                                <p>伤害浓度区间</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="data-item danger">
-                        <span class="number">0.051%</span>
-                        <p>CO₂浓度超过此值,人体即感不适</p>
-                    </div>
-                    <div class="data-item warning">
-                        <span class="number">0.20%~0.60%</span>
-                        <p>伤害浓度区间</p>
+                
+                    <!-- 右侧:图文解说 -->
+                    <div class="explanation">
+                        <p>CO₂是造成<mark>全球温室效应</mark>的最主要污染物...</p>
+                        <!-- 将图片作为结论的视觉锚点 -->
+                        <div class="image-wrapper">
+                            <img src="./image/Photosynthesis.jpg" alt="植物光合作用示意图">
+                            <p class="caption">⬆ 光合作用：自然的“碳氧转换器”</p>
+                        </div>
+                        <blockquote>
+                            <strong>结论：</strong>增加全球植被覆盖度、净化空气的关键措施。
+                        </blockquote>
                     </div>
                 </div>
-            </div>
-        
-            <!-- 右侧:图文解说 -->
-            <div class="explanation">
-                <p>CO₂是造成<mark>全球温室效应</mark>的最主要污染物...</p>
-                <!-- 将图片作为结论的视觉锚点 -->
-                 <div class="image-wrapper">
-                    <img src="./image/Photosynthesis.jpg" alt="植物光合作用示意图">
-                    <p class="caption">⬆ 光合作用：自然的“碳氧转换器”</p>
-                 </div>
-                 <blockquote>
-                    <strong>结论：</strong>增加全球植被覆盖度、净化空气的关键措施。
-                 </blockquote>
-            </div>
+                <!--演讲者备注（观众看不见） -->
+                <aside class="notes">
+                    <h4>💡 讲解要点：</h4>
+                    <ul>
+                        <li>开场强调气候变化紧迫性</li>
+                        <li>重点解释20倍吸收率的数据意义</li>
+                        <li>展示城市园林案例时，切换到下一张图片</li>
+                        <li>预留30秒回答可能的提问</li>
+                    </ul>
+                    <div class="timer-display">⏰ 已用时:<span id="current-time">00:00</span></div>
+                </aside>
+            </section>
+            <!-- 更多幻灯片 -->
         </div>
-    </section>
+    </div>
+
+    <!-- ====脚本区域（必须在这里！）==== -->
+    <!-- 在</body>标签前，按顺序放置 -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <!-- 插件必须在主库之后 -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <!-- 其他插件（可选） -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <!-- 你的自定义脚本必须在所有库之后 -->
+    <script src="script.js"></script>
 </body>
 </html>
