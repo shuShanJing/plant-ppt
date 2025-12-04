@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>植物对环境的影响及在环境治理中的应用</title>
-    <!-- 1.Reveal.js 核心样式 -->
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+    
+    <!-- 1. Reveal.js 核心样式 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <!-- 2.主题样式（选一个） -->
+    <!-- 2. 主题样式 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
-    <!-- 3.你的自定义样式-->
+    <!-- 3. 字体图标（地球按钮需要） -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 4. 你的自定义样式 -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- 导航菜单（放在slide外部） -->
+    <!-- 导航菜单（保持不变） -->
     <nav class="slides-menu">
         <div class="menu-header">🍃 导航</div>
         <ul>
-            <li><a href="#/1" class="menu-item active">封面</a></li>
-            <li><a href="#/2" class="menu-item">目录</a></li>
-            <li><a href="#/3" class="menu-item">大气净化</a></li>
-            <li><a href="#/4" class="menu-item">土壤影响</a></li>
-            <li><a href="#/5" class="menu-item">水体治理</a></li>
-            <li><a href="#/6" class="menu-item">环境监测</a></li>
+            <li><a href=" " class="menu-item active">封面</a ></li>
+            <li><a href="#/2" class="menu-item">目录</a ></li>
+            <li><a href="#/3" class="menu-item">大气净化</a ></li>
+            <li><a href="#/4" class="menu-item">土壤影响</a ></li>
+            <li><a href="#/5" class="menu-item">水体治理</a ></li>
+            <li><a href="#/6" class="menu-item">环境监测</a ></li>
         </ul>
         <div class="progress-bar">
             <div class="progress-fill"></div>
@@ -30,66 +35,65 @@
 
     <!-- Reveal.js 容器 -->
     <div class="reveal">
-        <!-- 幻灯片容器 -->
+        <!-- 幻灯片容器（保持不变） -->
         <div class="slides">
             <!-- 第一张幻灯片（封面） -->
             <section>
                 <h1>植物对环境的影响及在环境治理中的应用</h1>
                 <h3>交互式学术演示</h3>
-                <p>作者:shuShanJing | 技术伙伴:Deepseek</p>
-                <p class="fragment">⬇ 空格键开始旅程</p>
+                <p>作者:shuShanJing | 技术伙伴:Deepseek</p >
+                <p class="fragment">⬇ 空格键开始旅程</p >
             </section>
 
             <!-- 第二张幻灯片（目录） -->
             <section>
                 <h2>导航地图</h2>
                 <ul>
-                    <li><a href="#/3">一、植物对大气污染的净化作用及应用</a></li>
-                    <li><a href="#/4">二、植物对土壤环境的影响及应用</a></li>
-                    <li><a href="#/5">三、植物对水体环境的影响及应用</a></li>
-                    <li><a href="#/6">四、植物在环境监测中的应用</a></li>
+                    <li><a href="#/3">一、植物对大气污染的净化作用及应用</a ></li>
+                    <li><a href="#/4">二、植物对土壤环境的影响及应用</a ></li>
+                    <li><a href="#/5">三、植物对水体环境的影响及应用</a ></li>
+                    <li><a href="#/6">四、植物在环境监测中的应用</a ></li>
                 </ul>
             </section>
 
-            <!-- 第三张幻灯片：原来的大气净化内容 -->
+            <!-- 第三张幻灯片 -->
             <section>
                 <h2>一、植物对大气污染的净化作用及在大气治理中的应用</h2>
                 <h3>（一）植物对大气污染的净化作用</h3>
-
                 <div class="content-grid">
-                    <!-- 左列：核心数据卡片 -->
+                    <!-- 左列：核心数据卡片（分片段显示） -->
                     <div class="data-card">
                         <h4>🍃吸收CO₂放出O₂</h4>
                         <div class="highlight-data">
-                            <div class="data-item">
+                            <div class="data-item fragment" data-fragment-index="0">
                                 <span class="number">20x</span>
-                                <p>光合吸收量是呼吸释放量的<strong>20倍</strong></p>
+                                <p>光合吸收量是呼吸释放量的<strong>20倍</strong></p >
                             </div>
-                            <div class="data-item danger">
+                            <div class="data-item danger fragment" data-fragment-index="1">
                                 <span class="number">0.051%</span>
-                                <p>CO₂浓度超过此值,人体即感不适</p>
+                                <p>CO₂浓度超过此值,人体即感不适</p >
                             </div>
-                            <div class="data-item warning">
+                            <div class="data-item warning fragment" data-fragment-index="2">
                                 <span class="number">0.20%~0.60%</span>
-                                <p>伤害浓度区间</p>
+                                <p>伤害浓度区间</p >
                             </div>
                         </div>
                     </div>
-                
-                    <!-- 右侧:图文解说 -->
+
+                    <!-- 右侧:图文解说 （也分片段）-->
                     <div class="explanation">
-                        <p>CO₂是造成<mark>全球温室效应</mark>的最主要污染物...</p>
-                        <!-- 将图片作为结论的视觉锚点 -->
-                        <div class="image-wrapper">
+                        <p class="fragment" data-fragment-index="3">
+                            CO₂是造成<mark>全球温室效应</mark>的最主要污染物...
+                        </p >
+                        <div class="image-wrapper fragment" data-fragment-index="4">
                             <img src="./image/Photosynthesis.jpg" alt="植物光合作用示意图">
-                            <p class="caption">⬆ 光合作用：自然的“碳氧转换器”</p>
+                            <p class="caption">⬆ 光合作用：自然的"碳氧转换器"</p >
                         </div>
-                        <blockquote>
+                        <blockquote class="fragment" data-fragment-index="5">
                             <strong>结论：</strong>增加全球植被覆盖度、净化空气的关键措施。
                         </blockquote>
                     </div>
                 </div>
-                <!--演讲者备注（观众看不见） -->
                 <aside class="notes">
                     <h4>💡 讲解要点：</h4>
                     <ul>
@@ -101,10 +105,53 @@
                     <div class="timer-display">⏰ 已用时:<span id="current-time">00:00</span></div>
                 </aside>
             </section>
-            <!-- 更多幻灯片 -->
+
+            <!-- 地球幻灯片 -->
+            <section data-background="#001122">
+                <h2 style="color: #57c785;">🌍 全球植被分布与生态功能</h2>
+                
+                <div class="earth-container">
+                    <!-- 3D地球将渲染到这里 -->
+                    <canvas id="earth-canvas"></canvas>
+                    
+                    <!-- 控制面板 -->
+                    <div class="earth-controls">
+                        <button class="earth-btn" id="rotate-toggle">
+                            <i class="fas fa-play"></i> 旋转
+                        </button>
+                        <button class="earth-btn" id="reset-view">
+                            <i class="fas fa-sync-alt"></i> 重置
+                        </button>
+                        <div class="legend">
+                            <span style="color:#4CAF50;">■</span> 热带雨林
+                            <span style="color:#8BC34A;">■</span> 温带森林
+                            <span style="color:#FFC107;">■</span> 草原
+                        </div>
+                    </div>
+                    
+                    <!-- 数据面板 -->
+                    <div class="earth-data-panel" id="data-panel">
+                        <h4 id="region-name">点击地球上的区域</h4>
+                        <div id="region-data">
+                            <p>森林覆盖率: <span class="data-value">--%</span></p >
+                            <p>年碳吸收量: <span class="data-value">-- 亿吨</span></p >
+                            <p>主要植物类型: <span class="data-value">--</span></p >
+                        </div>
+                    </div>
+                </div>
+                
+                <aside class="notes">
+                    <h4>💡 讲解要点：</h4>
+                    <ul>
+                        <li>展示热带雨林（南美、东南亚）的密集植被</li>
+                        <li>对比不同气候带的植被类型</li>
+                        <li>强调森林对全球碳循环的关键作用</li>
+                    </ul>
+                </aside>
+            </section>
+            <!-- 这里可以继续添加更多幻灯片 -->
         </div>
     </div>
-
     
     <!-- 音效控制器 -->
     <div class="audio-controls">
@@ -115,10 +162,9 @@
         <span id="volume-display">30%</span>
     </div>
 
-        <!-- 音频元素（隐藏） - 使用Mixkit免费音源 -->
+    <!-- 音频元素（隐藏） -->
     <audio id="bg-audio" loop preload="auto">
         <source src="https://assets.mixkit.co/music/preview/mixkit-forest-trek-567.mp3" type="audio/mpeg">
-        你的浏览器不支持音频
     </audio>
     <audio id="page-turn-sound" preload="auto">
         <source src="https://assets.mixkit.co/sfx/preview/mixkit-wind-1250.mp3" type="audio/mpeg">
@@ -127,15 +173,22 @@
         <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
     </audio>
 
-    <!-- ====脚本区域（必须在这里！）==== -->
-    <!-- 在</body>标签前，按顺序放置 -->
+
+    <!-- ==== 脚本加载区域 ==== -->
+    <!-- 注意：严格按照顺序加载 -->
+    
+    <!-- 1. 先加载 Three.js 和其控件 -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    
+    <!-- 2. 再加载 Reveal.js 及其插件 -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-    <!-- 插件必须在主库之后 -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-    <!-- 其他插件（可选） -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <!-- 你的自定义脚本必须在所有库之后 -->
+    
+    <!-- 3. 最后加载你的自定义脚本 -->
     <script src="script.js"></script>
+    <script src="earth.js"></script>
 </body>
 </html>
